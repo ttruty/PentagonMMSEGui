@@ -48,7 +48,7 @@ def draw_stroke(stroke_x, stroke_y):
     plt.plot(stroke_x, stroke_y, color='b', linestyle='-', picker=True)
     # fig = plt.gcf()
 
-def plot_clock(path):
+def plot_file(path):
     ''' this plots clock from raw data
     usage: plot_clock(path)
     '''
@@ -114,9 +114,6 @@ def plot_clock(path):
     # plt.waitforbuttonpress()
 
 
-# plt.show()
-
 def make_fig(filename):
-    figure = plot_clock(filename)
+    figure = plot_file(filename)
     return figure
-
